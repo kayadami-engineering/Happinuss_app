@@ -6,7 +6,7 @@
 //  Copyright (c) 2015년 kayadami. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RootViewController.h"
 
 @interface ViewController ()
 

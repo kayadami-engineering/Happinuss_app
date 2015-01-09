@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		8814666B1A5C2F7600D677A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8814666A1A5C2F7600D677A9 /* main.m */; };
 		8814666E1A5C2F7600D677A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8814666D1A5C2F7600D677A9 /* AppDelegate.m */; };
-		881466711A5C2F7600D677A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881466701A5C2F7600D677A9 /* ViewController.m */; };
+		881466711A5C2F7600D677A9 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 881466701A5C2F7600D677A9 /* RootViewController.m */; };
 		881466741A5C2F7600D677A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881466721A5C2F7600D677A9 /* Main.storyboard */; };
 		881466761A5C2F7600D677A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881466751A5C2F7600D677A9 /* Images.xcassets */; };
 		881466791A5C2F7600D677A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 881466771A5C2F7600D677A9 /* LaunchScreen.xib */; };
 		881466851A5C2F7600D677A9 /* happinuss_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 881466841A5C2F7600D677A9 /* happinuss_iosTests.m */; };
+		88A52A111A5FD8C200D2CE70 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A101A5FD8C200D2CE70 /* HomeViewController.m */; };
+		88A52A141A5FD8DC00D2CE70 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A131A5FD8DC00D2CE70 /* LoginViewController.m */; };
+		88A52A181A5FDA2900D2CE70 /* MyStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */; };
+		88A52A1B1A5FE47700D2CE70 /* OtherStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */; };
+		88A52A1E1A60151400D2CE70 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A52A1D1A60151400D2CE70 /* Launch.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,23 @@
 		8814666A1A5C2F7600D677A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8814666C1A5C2F7600D677A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8814666D1A5C2F7600D677A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8814666F1A5C2F7600D677A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		881466701A5C2F7600D677A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8814666F1A5C2F7600D677A9 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		881466701A5C2F7600D677A9 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		881466731A5C2F7600D677A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		881466751A5C2F7600D677A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		881466781A5C2F7600D677A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		8814667E1A5C2F7600D677A9 /* happinuss_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = happinuss_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		881466831A5C2F7600D677A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881466841A5C2F7600D677A9 /* happinuss_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = happinuss_iosTests.m; sourceTree = "<group>"; };
+		88A52A0F1A5FD8C200D2CE70 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		88A52A101A5FD8C200D2CE70 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		88A52A121A5FD8DC00D2CE70 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		88A52A131A5FD8DC00D2CE70 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		88A52A161A5FDA2900D2CE70 /* MyStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStoryViewController.h; sourceTree = "<group>"; };
+		88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStoryViewController.m; sourceTree = "<group>"; };
+		88A52A191A5FE47700D2CE70 /* OtherStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherStoryViewController.h; sourceTree = "<group>"; };
+		88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherStoryViewController.m; sourceTree = "<group>"; };
+		88A52A1D1A60151400D2CE70 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +97,11 @@
 			children = (
 				8814666C1A5C2F7600D677A9 /* AppDelegate.h */,
 				8814666D1A5C2F7600D677A9 /* AppDelegate.m */,
-				8814666F1A5C2F7600D677A9 /* ViewController.h */,
-				881466701A5C2F7600D677A9 /* ViewController.m */,
 				881466721A5C2F7600D677A9 /* Main.storyboard */,
+				88A52A151A5FD98700D2CE70 /* MainController */,
 				881466751A5C2F7600D677A9 /* Images.xcassets */,
 				881466771A5C2F7600D677A9 /* LaunchScreen.xib */,
+				88A52A1C1A6014F500D2CE70 /* images */,
 				881466681A5C2F7600D677A9 /* Supporting Files */,
 			);
 			path = happinuss_ios;
@@ -117,6 +131,31 @@
 				881466831A5C2F7600D677A9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88A52A151A5FD98700D2CE70 /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				8814666F1A5C2F7600D677A9 /* RootViewController.h */,
+				881466701A5C2F7600D677A9 /* RootViewController.m */,
+				88A52A121A5FD8DC00D2CE70 /* LoginViewController.h */,
+				88A52A131A5FD8DC00D2CE70 /* LoginViewController.m */,
+				88A52A0F1A5FD8C200D2CE70 /* HomeViewController.h */,
+				88A52A101A5FD8C200D2CE70 /* HomeViewController.m */,
+				88A52A161A5FDA2900D2CE70 /* MyStoryViewController.h */,
+				88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */,
+				88A52A191A5FE47700D2CE70 /* OtherStoryViewController.h */,
+				88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */,
+			);
+			name = MainController;
+			sourceTree = "<group>";
+		};
+		88A52A1C1A6014F500D2CE70 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				88A52A1D1A60151400D2CE70 /* Launch.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A52A1E1A60151400D2CE70 /* Launch.png in Resources */,
 				881466741A5C2F7600D677A9 /* Main.storyboard in Resources */,
 				881466791A5C2F7600D677A9 /* LaunchScreen.xib in Resources */,
 				881466761A5C2F7600D677A9 /* Images.xcassets in Resources */,
@@ -219,9 +259,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				881466711A5C2F7600D677A9 /* ViewController.m in Sources */,
+				881466711A5C2F7600D677A9 /* RootViewController.m in Sources */,
+				88A52A1B1A5FE47700D2CE70 /* OtherStoryViewController.m in Sources */,
 				8814666E1A5C2F7600D677A9 /* AppDelegate.m in Sources */,
+				88A52A181A5FDA2900D2CE70 /* MyStoryViewController.m in Sources */,
+				88A52A111A5FD8C200D2CE70 /* HomeViewController.m in Sources */,
 				8814666B1A5C2F7600D677A9 /* main.m in Sources */,
+				88A52A141A5FD8DC00D2CE70 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +456,7 @@
 				8814668A1A5C2F7600D677A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8814668B1A5C2F7600D677A9 /* Build configuration list for PBXNativeTarget "happinuss_iosTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +465,7 @@
 				8814668D1A5C2F7600D677A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
