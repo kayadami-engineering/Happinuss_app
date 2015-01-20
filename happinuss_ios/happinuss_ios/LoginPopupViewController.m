@@ -7,12 +7,10 @@
 //
 
 #import "LoginPopupViewController.h"
-
-@interface LoginPopupViewController ()
-
-@end
+#import "WYPopoverController.h"
 
 @implementation LoginPopupViewController
+@synthesize wyPopoverController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,6 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -44,4 +43,10 @@
 }
 */
 
+- (IBAction)loginBtnTouch:(id)sender {
+    
+//    [wyPopoverController dismissPopoverAnimated:YES completion:^{
+//        [self popoverControllerDidDismissPopover:settingsPopoverController];
+//    }];
+}
 @end

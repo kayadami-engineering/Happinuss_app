@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WYPopoverController.h"
 
-@interface LoginViewController : UIViewController {
+@interface LoginViewController : UIViewController <WYPopoverControllerDelegate> {
+    WYPopoverController *loginPopupViewController;
 }
 
-- (IBAction)showPopupLogin:(id)sender;
-
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
+@property (strong, nonatomic) WYPopoverController *loginPopupViewController;
 @end

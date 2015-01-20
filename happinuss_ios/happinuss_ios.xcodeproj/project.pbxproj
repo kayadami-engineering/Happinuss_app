@@ -19,6 +19,8 @@
 		886612A01A6D1F39008D8473 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8866129B1A6D1F39008D8473 /* SVIndefiniteAnimatedView.m */; };
 		886612A11A6D1F39008D8473 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8866129D1A6D1F39008D8473 /* SVProgressHUD.bundle */; };
 		886612A21A6D1F39008D8473 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8866129F1A6D1F39008D8473 /* SVProgressHUD.m */; };
+		889800AF1A6E384A004C3158 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889800AC1A6E384A004C3158 /* WYPopoverController.m */; };
+		889800B01A6E384A004C3158 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 889800AE1A6E384A004C3158 /* WYStoryboardPopoverSegue.m */; };
 		88A52A111A5FD8C200D2CE70 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A101A5FD8C200D2CE70 /* HomeViewController.m */; };
 		88A52A141A5FD8DC00D2CE70 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A131A5FD8DC00D2CE70 /* LoginViewController.m */; };
 		88A52A181A5FDA2900D2CE70 /* MyStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */; };
@@ -29,7 +31,6 @@
 		88E9CA171A6D20D2005FE8EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E9CA161A6D20D2005FE8EC /* CoreGraphics.framework */; };
 		88E9CA191A6D2D45005FE8EC /* eg_launch_up.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 88E9CA181A6D2D45005FE8EC /* eg_launch_up.jpg */; };
 		88E9CA261A6D745F005FE8EC /* LoginPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E9CA241A6D745F005FE8EC /* LoginPopupViewController.m */; };
-		88E9CA271A6D745F005FE8EC /* LoginPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88E9CA251A6D745F005FE8EC /* LoginPopupViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,10 @@
 		8866129D1A6D1F39008D8473 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		8866129E1A6D1F39008D8473 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
 		8866129F1A6D1F39008D8473 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		889800AB1A6E384A004C3158 /* WYPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYPopoverController.h; sourceTree = "<group>"; };
+		889800AC1A6E384A004C3158 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
+		889800AD1A6E384A004C3158 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
+		889800AE1A6E384A004C3158 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
 		88A52A0F1A5FD8C200D2CE70 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		88A52A101A5FD8C200D2CE70 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		88A52A121A5FD8DC00D2CE70 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
@@ -79,7 +84,6 @@
 		88E9CA181A6D2D45005FE8EC /* eg_launch_up.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eg_launch_up.jpg; sourceTree = "<group>"; };
 		88E9CA231A6D745F005FE8EC /* LoginPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPopupViewController.h; sourceTree = "<group>"; };
 		88E9CA241A6D745F005FE8EC /* LoginPopupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPopupViewController.m; sourceTree = "<group>"; };
-		88E9CA251A6D745F005FE8EC /* LoginPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginPopupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 				8814666C1A5C2F7600D677A9 /* AppDelegate.h */,
 				8814666D1A5C2F7600D677A9 /* AppDelegate.m */,
 				881466721A5C2F7600D677A9 /* Main.storyboard */,
+				889800AA1A6E384A004C3158 /* WYPopoverController */,
 				886612991A6D1F39008D8473 /* SVProgressHUD */,
 				88A52A151A5FD98700D2CE70 /* MainController */,
 				881466751A5C2F7600D677A9 /* Images.xcassets */,
@@ -188,6 +193,17 @@
 			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		889800AA1A6E384A004C3158 /* WYPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				889800AB1A6E384A004C3158 /* WYPopoverController.h */,
+				889800AC1A6E384A004C3158 /* WYPopoverController.m */,
+				889800AD1A6E384A004C3158 /* WYStoryboardPopoverSegue.h */,
+				889800AE1A6E384A004C3158 /* WYStoryboardPopoverSegue.m */,
+			);
+			path = WYPopoverController;
+			sourceTree = "<group>";
+		};
 		88A52A151A5FD98700D2CE70 /* MainController */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,7 +219,6 @@
 				88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */,
 				88E9CA231A6D745F005FE8EC /* LoginPopupViewController.h */,
 				88E9CA241A6D745F005FE8EC /* LoginPopupViewController.m */,
-				88E9CA251A6D745F005FE8EC /* LoginPopupViewController.xib */,
 			);
 			name = MainController;
 			sourceTree = "<group>";
@@ -309,7 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A52A1E1A60151400D2CE70 /* Launch.png in Resources */,
-				88E9CA271A6D745F005FE8EC /* LoginPopupViewController.xib in Resources */,
 				886612A11A6D1F39008D8473 /* SVProgressHUD.bundle in Resources */,
 				881466741A5C2F7600D677A9 /* Main.storyboard in Resources */,
 				88E9CA191A6D2D45005FE8EC /* eg_launch_up.jpg in Resources */,
@@ -335,10 +349,12 @@
 			files = (
 				881466711A5C2F7600D677A9 /* RootViewController.m in Sources */,
 				88A52A1B1A5FE47700D2CE70 /* OtherStoryViewController.m in Sources */,
+				889800B01A6E384A004C3158 /* WYStoryboardPopoverSegue.m in Sources */,
 				88E9CA261A6D745F005FE8EC /* LoginPopupViewController.m in Sources */,
 				8814666E1A5C2F7600D677A9 /* AppDelegate.m in Sources */,
 				886612A01A6D1F39008D8473 /* SVIndefiniteAnimatedView.m in Sources */,
 				88A52A181A5FDA2900D2CE70 /* MyStoryViewController.m in Sources */,
+				889800AF1A6E384A004C3158 /* WYPopoverController.m in Sources */,
 				886612A21A6D1F39008D8473 /* SVProgressHUD.m in Sources */,
 				88A52A111A5FD8C200D2CE70 /* HomeViewController.m in Sources */,
 				8814666B1A5C2F7600D677A9 /* main.m in Sources */,

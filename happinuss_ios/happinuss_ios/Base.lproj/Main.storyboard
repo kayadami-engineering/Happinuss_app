@@ -44,12 +44,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eg_launch.png" translatesAutoresizingMaskIntoConstraints="NO" id="IQ9-8B-Bdz">
+                                <rect key="frame" x="0.0" y="0.0" width="329" height="568"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.79999999999999982" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K13-QX-DIy">
-                                <rect key="frame" x="0.0" y="507" width="320" height="61"/>
+                                <rect key="frame" x="0.0" y="515" width="320" height="53"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ey-vi-phY">
-                                <rect key="frame" x="32" y="518" width="153" height="40"/>
+                                <rect key="frame" x="32" y="515" width="153" height="55"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="이미 회원이신가요?">
                                     <color key="titleColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,14 +60,14 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gaa-km-Cf7">
-                                <rect key="frame" x="226" y="517" width="59" height="41"/>
+                                <rect key="frame" x="226" y="515" width="59" height="53"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" red="0.83921568627450982" green="0.69411764705882351" blue="0.71372549019607845" alpha="0.85999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showPopupLogin:" destination="oMk-ul-yrD" eventType="touchUpInside" id="0bF-sA-3Sh"/>
+                                    <segue destination="R1b-9L-d8K" kind="custom" identifier="LoginPopupSegue" customClass="WYStoryboardPopoverSegue" id="axC-a0-fZv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -73,12 +76,64 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="loginBtn" destination="Gaa-km-Cf7" id="8Yg-K8-DaU"/>
-                        <segue destination="apH-6w-Nqu" kind="presentation" id="hMU-Oe-v7C"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFV-Jb-geV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="683" y="264"/>
+            <point key="canvasLocation" x="675" y="264"/>
+        </scene>
+        <!--Login Popup View Controller-->
+        <scene sceneID="7L0-Ri-BuG">
+            <objects>
+                <viewController id="R1b-9L-d8K" customClass="LoginPopupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BIf-7B-1Tb"/>
+                        <viewControllerLayoutGuide type="bottom" id="pNK-Mx-wpz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e9R-Yw-hR6">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="비밀번호" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMb-tg-5ba">
+                                <rect key="frame" x="33" y="115" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgr-od-jhQ">
+                                <rect key="frame" x="109" y="67" width="159" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAW-ls-dil">
+                                <rect key="frame" x="109" y="111" width="159" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E9-32-MYh">
+                                <rect key="frame" x="138" y="156" width="39" height="30"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnTouch:" destination="R1b-9L-d8K" eventType="touchUpInside" id="ewb-oM-5t5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이메일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq8-0O-ARY">
+                                <rect key="frame" x="33" y="71" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="200"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRW-LM-c0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1136" y="51"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="q3s-Tb-iDv">
@@ -97,10 +152,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zVw-3Z-7mc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123" y="264"/>
+            <point key="canvasLocation" x="1146" y="563"/>
         </scene>
     </scenes>
     <resources>
+        <image name="eg_launch.png" width="720" height="1280"/>
         <image name="eg_launch_up.jpg" width="720" height="1280"/>
     </resources>
 </document>

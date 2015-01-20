@@ -7,10 +7,12 @@
 //
 
 #import "LoginViewController.h"
-
+#import "LoginPopupViewController.h"
+#import "WYStoryboardPopoverSegue.h"
 
 @implementation LoginViewController
 @synthesize loginBtn;
+@synthesize loginPopupViewController;
 
 
 - (void)viewDidLoad {
@@ -33,7 +35,18 @@
 }
 */
 
-- (IBAction)showPopupLogin:(id)sender {
-    
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"LoginPopupSegue"])
+    {
+        WYStoryboardPopoverSegue *popoverSegue = (WYStoryboardPopoverSegue *)segue;
+        loginPopupViewController = [popoverSegue popoverControllerWithSender:sender
+                                                    permittedArrowDirections:WYPopoverArrowDirectionDown
+                                                                    animated:YES
+                                                                     options:WYPopoverAnimationOptionFadeWithScale];
+        loginPopupViewController.delegate = self;
+    }
 }
+
 @end
