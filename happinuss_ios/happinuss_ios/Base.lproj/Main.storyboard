@@ -70,6 +70,16 @@
                                     <segue destination="R1b-9L-d8K" kind="custom" identifier="LoginPopupSegue" customClass="WYStoryboardPopoverSegue" id="axC-a0-fZv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Yc-rr-ZMl">
+                                <rect key="frame" x="34" y="323" width="253" height="55"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="     이메일로 가입하기" backgroundImage="signup_e_ic.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="52G-F6-RFW" kind="custom" identifier="JoinPopupSegue" customClass="WYStoryboardPopoverSegue" id="c8K-SD-aOK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -95,19 +105,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="비밀번호" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMb-tg-5ba">
-                                <rect key="frame" x="33" y="91" width="68" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgr-od-jhQ">
-                                <rect key="frame" x="109" y="28" width="159" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0E9-32-MYh">
-                                <rect key="frame" x="106" y="142" width="88" height="33"/>
+                                <rect key="frame" x="106" y="159" width="88" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="로그인" backgroundImage="signup_1_ic.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -117,29 +116,28 @@
                                     <action selector="loginBtnTouch:" destination="R1b-9L-d8K" eventType="touchUpInside" id="ewb-oM-5t5"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이메일" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rq8-0O-ARY">
-                                <rect key="frame" x="33" y="42" width="52" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.38039215686274508" green="0.38039215686274508" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHq-AC-yTg">
-                                <rect key="frame" x="259" y="11" width="32" height="31"/>
+                                <rect key="frame" x="263" y="20" width="28" height="27"/>
                                 <state key="normal" title="Button" image="cancel_ic.png"/>
                                 <connections>
                                     <action selector="closeBtnTouch:" destination="R1b-9L-d8K" eventType="touchUpInside" id="5St-dW-wRi"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xgr-od-jhQ">
+                                <rect key="frame" x="41" y="55" width="215" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-w3-HZl">
-                                <rect key="frame" x="21" y="66" width="259" height="1"/>
+                                <rect key="frame" x="21" y="93" width="259" height="1"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="wsQ-Sm-1k8">
-                                <rect key="frame" x="21" y="120" width="259" height="1"/>
+                                <rect key="frame" x="21" y="143" width="259" height="1"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAW-ls-dil">
-                                <rect key="frame" x="109" y="79" width="159" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mAW-ls-dil">
+                                <rect key="frame" x="41" y="102" width="215" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -149,9 +147,90 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xRW-LM-c0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="-196"/>
+            <point key="canvasLocation" x="1103" y="-349"/>
         </scene>
-        <!--Other Story View Controller-->
+        <!--Join Popup View Controller-->
+        <scene sceneID="uyh-o8-z3m">
+            <objects>
+                <viewController id="52G-F6-RFW" customClass="JoinPopupViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="63P-kh-oWB"/>
+                        <viewControllerLayoutGuide type="bottom" id="kWf-eS-snG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0GW-Gq-WqU">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8U3-ei-X9n">
+                                <rect key="frame" x="33" y="8" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="xaH-Ed-4co">
+                                <rect key="frame" x="21" y="37" width="259" height="1"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="51P-q9-Y8V">
+                                <rect key="frame" x="21" y="75" width="259" height="1"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="학번 예)1169001 (7자리), IES00000 (8자리)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjp-B1-SN5">
+                                <rect key="frame" x="33" y="46" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="jWc-G4-i6a">
+                                <rect key="frame" x="21" y="113" width="259" height="1"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CyE-Yi-LIt">
+                                <rect key="frame" x="33" y="84" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-BS-T6A">
+                                <rect key="frame" x="21" y="151" width="259" height="1"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-jg-K91">
+                                <rect key="frame" x="33" y="122" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-Ck-e3p">
+                                <rect key="frame" x="21" y="189" width="259" height="1"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 확인" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5H8-3v-WdQ">
+                                <rect key="frame" x="33" y="160" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="o4h-n1-66B">
+                                <rect key="frame" x="21" y="227" width="259" height="1"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="생년월일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-fU-HGb">
+                                <rect key="frame" x="33" y="198" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grl-Ee-kEV">
+                                <rect key="frame" x="106" y="236" width="88" height="33"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="가입완료" backgroundImage="signup_1_ic.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBtnTouch:" destination="52G-F6-RFW" eventType="touchUpInside" id="A7F-BM-r3j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="300" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjS-LA-MN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="-417"/>
+        </scene>
+        <!--우리 이야기-->
         <scene sceneID="G5v-GE-ww0">
             <objects>
                 <viewController id="pBB-Sw-Bep" customClass="OtherStoryViewController" sceneMemberID="viewController">
@@ -164,14 +243,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="others.png" id="S8E-OA-adX"/>
+                    <tabBarItem key="tabBarItem" title="우리 이야기" image="ourstory.png" id="S8E-OA-adX"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J7S-Sj-4i4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1833" y="264"/>
         </scene>
-        <!--Home View Controller-->
+        <!--홈-->
         <scene sceneID="EdJ-Vt-xOg">
             <objects>
                 <viewController id="Jnr-rK-1Nj" customClass="HomeViewController" sceneMemberID="viewController">
@@ -184,17 +263,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_blur.png" translatesAutoresizingMaskIntoConstraints="NO" id="LkZ-2S-Kcu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="home.jpg" id="mga-mn-EjW"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="home.png" id="mga-mn-EjW"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="efY-ec-R4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1833" y="-451"/>
+            <point key="canvasLocation" x="1833" y="-422"/>
         </scene>
         <!--Main Tab View Controller-->
         <scene sceneID="peE-Iv-fcC">
@@ -206,6 +285,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="Jnr-rK-1Nj" kind="relationship" relationship="viewControllers" id="24H-5k-Lga"/>
@@ -219,7 +299,7 @@
             </objects>
             <point key="canvasLocation" x="1355" y="264"/>
         </scene>
-        <!--Write Story View Controller-->
+        <!--글쓰기-->
         <scene sceneID="LOP-Bm-aDz">
             <objects>
                 <viewController id="YD4-Xk-7Jt" customClass="WriteStoryViewController" sceneMemberID="viewController">
@@ -232,14 +312,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="write.png" id="GcH-ly-KcR"/>
+                    <tabBarItem key="tabBarItem" title="글쓰기" image="write.png" id="GcH-ly-KcR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ynv-UK-nf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900" y="1037"/>
         </scene>
-        <!--My Story View Controller-->
+        <!--나의 이야기-->
         <scene sceneID="SB0-2U-m6M">
             <objects>
                 <viewController id="L2g-W1-2u9" customClass="MyStoryViewController" sceneMemberID="viewController">
@@ -252,14 +332,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="mystory.png" id="HbV-S3-QXk"/>
+                    <tabBarItem key="tabBarItem" title="나의 이야기" image="mystory.png" id="HbV-S3-QXk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCb-g4-p7y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1355" y="1037"/>
         </scene>
-        <!--Report View Controller-->
+        <!--리포트-->
         <scene sceneID="kgq-q9-wlY">
             <objects>
                 <viewController id="kaq-yb-5Jp" customClass="ReportViewController" sceneMemberID="viewController">
@@ -272,7 +352,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="myreport.png" id="ioq-To-50A"/>
+                    <tabBarItem key="tabBarItem" title="리포트" image="report.png" id="ioq-To-50A"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FXn-ng-mUV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,12 +365,13 @@
         <image name="cancel_ic.png" width="41" height="41"/>
         <image name="eg_launch.png" width="720" height="1280"/>
         <image name="eg_launch_up.jpg" width="720" height="1280"/>
-        <image name="home.jpg" width="50" height="50"/>
-        <image name="myreport.png" width="51" height="59"/>
-        <image name="mystory.png" width="80" height="80"/>
-        <image name="others.png" width="72" height="58"/>
+        <image name="home.png" width="25" height="25"/>
+        <image name="mystory.png" width="25" height="25"/>
+        <image name="ourstory.png" width="25" height="25"/>
         <image name="pinkLine.png" width="536" height="1"/>
+        <image name="report.png" width="25" height="25"/>
         <image name="signup_1_ic.png" width="190" height="74"/>
-        <image name="write.png" width="80" height="80"/>
+        <image name="signup_e_ic.png" width="580" height="123"/>
+        <image name="write.png" width="25" height="25"/>
     </resources>
 </document>

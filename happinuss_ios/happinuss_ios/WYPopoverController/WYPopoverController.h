@@ -26,6 +26,8 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#define LOGINPOP 0
+#define JOINPOP  1
 
 @protocol WYPopoverControllerDelegate;
 @class WYPopoverTheme;
@@ -104,7 +106,7 @@ typedef NS_OPTIONS(NSUInteger, WYPopoverAnimationOptions) {
 @property (nonatomic, assign) float                             animationDuration;
 
 @property (nonatomic, strong) WYPopoverTheme                   *theme;
-
+@property (nonatomic, assign) int                               popupMode;
 + (void)setDefaultTheme:(WYPopoverTheme *)theme;
 + (WYPopoverTheme *)defaultTheme;
 
@@ -117,6 +119,9 @@ typedef NS_OPTIONS(NSUInteger, WYPopoverAnimationOptions) {
 - (void)beginThemeUpdates;
 - (void)endThemeUpdates;
 
+// set popupmode
+
+-(void)setPopupMode:(int)mode;
 // Present popover from classic views methods
 
 - (void)presentPopoverFromRect:(CGRect)rect

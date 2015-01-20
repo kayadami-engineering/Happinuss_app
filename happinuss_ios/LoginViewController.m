@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "LoginPopupViewController.h"
+#import "JoinPopupViewController.h"
 #import "WYStoryboardPopoverSegue.h"
 #import "SVProgressHUD.h"
 
@@ -17,7 +18,7 @@
 @end
 @implementation LoginViewController
 @synthesize loginBtn;
-@synthesize loginPopoverController;
+@synthesize popoverController;
 
 
 - (void)viewDidLoad {
@@ -47,13 +48,28 @@
     {
         LoginPopupViewController *loginPopupViewController = segue.destinationViewController;
         loginPopupViewController.delegate = self;
-        
+
         WYStoryboardPopoverSegue *popoverSegue = (WYStoryboardPopoverSegue *)segue;
-        loginPopoverController = [popoverSegue popoverControllerWithSender:sender
+        popoverController = [popoverSegue popoverControllerWithSender:sender
                                                     permittedArrowDirections:WYPopoverArrowDirectionDown
                                                                     animated:YES
-                                                                     options:WYPopoverAnimationOptionFadeWithScale];
-        loginPopoverController.delegate = self;
+                                                                     options:WYPopoverAnimationOptionFadeWithScale
+                                                                 mode:0];
+        popoverController.delegate = self;
+    }
+    else if ([segue.identifier isEqualToString:@"JoinPopupSegue"])
+    {
+        JoinPopupViewController *joinPopupViewController = segue.destinationViewController;
+        joinPopupViewController.delegate = self;
+        
+        WYStoryboardPopoverSegue *popoverSegue = (WYStoryboardPopoverSegue *)segue;
+        popoverController = [popoverSegue popoverControllerWithSender:sender
+                                                  permittedArrowDirections:WYPopoverArrowDirectionDown
+                                                                  animated:YES
+                                                                   options:WYPopoverAnimationOptionFadeWithScale
+                                                                 mode:1];
+        popoverController.delegate = self;
+        
     }
 }
 
@@ -63,21 +79,30 @@
     [SVProgressHUD dismiss];
     [self performSegueWithIdentifier:@"TabViewSegue" sender:self];
 }
+- (void)closePopup {
+    [popoverController dismissPopoverAnimated:YES];
+    popoverController.delegate = nil;
+    popoverController = nil;
+}
 
 #pragma mark - Delegate
 
-- (void)closePopup:(LoginPopupViewController *)controller {
+- (void)closePopupLogin:(LoginPopupViewController *)controller {
     
     controller.delegate = nil;
-    [loginPopoverController dismissPopoverAnimated:YES];
-    loginPopoverController.delegate = nil;
-    loginPopoverController = nil;
     
+    [self closePopup];
+}
+- (void)closePopupJoin:(JoinPopupViewController *)controller {
+    
+    controller.delegate = nil;
+    
+    [self closePopup];
 }
 
 - (void)loginRequest:(LoginPopupViewController *)controller {
     
-    [self closePopup:controller];
+    [self closePopupLogin:controller];
     [SVProgressHUD setViewForExtension:self.view];
     [SVProgressHUD setForegroundColor:[UIColor colorWithRed:120.0/255.0 green:194.0/255.0 blue:222.0/255.0 alpha:0.90]];
     [SVProgressHUD show];

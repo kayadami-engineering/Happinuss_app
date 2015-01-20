@@ -42,7 +42,6 @@
 ////////////////////////////////////////////////////////////////////////////
 
 @implementation WYStoryboardPopoverSegue
-
 - (void)perform
 {
     if ([sender isKindOfClass:[UIBarButtonItem class]])
@@ -84,7 +83,22 @@
     options = aOptions;
     
     popoverController = [[WYPopoverController alloc] initWithContentViewController:self.destinationViewController];
+    return popoverController;
+}
+
+- (WYPopoverController*)popoverControllerWithSender:(id)aSender
+                           permittedArrowDirections:(WYPopoverArrowDirection)aArrowDirections
+                                           animated:(BOOL)aAnimated
+                                            options:(WYPopoverAnimationOptions)aOptions
+                                               mode:(int)aMode
+{
+    sender = aSender;
+    arrowDirections = aArrowDirections;
+    animated = aAnimated;
+    options = aOptions;
     
+    popoverController = [[WYPopoverController alloc] initWithContentViewController:self.destinationViewController];
+    popoverController.popupMode = aMode;
     return popoverController;
 }
 

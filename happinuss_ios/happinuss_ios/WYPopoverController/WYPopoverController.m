@@ -266,6 +266,7 @@ static char const * const UINavigationControllerEmbedInPopoverTagKey = "UINaviga
 
 @end
 
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @interface UIViewController (WYPopover)
@@ -274,6 +275,7 @@ static char const * const UINavigationControllerEmbedInPopoverTagKey = "UINaviga
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation UIViewController (WYPopover)
+
 
 + (void)load
 {
@@ -1596,9 +1598,11 @@ static float edgeSizeFromCornerRadius(float cornerRadius) {
 @synthesize popoverContentSize = popoverContentSize_;
 @synthesize animationDuration;
 @synthesize theme;
+@synthesize popupMode;
 
 static WYPopoverTheme *defaultTheme_ = nil;
 
+#pragma mark
 + (void)setDefaultTheme:(WYPopoverTheme *)aTheme
 {
     defaultTheme_ = aTheme;
@@ -2221,7 +2225,14 @@ static WYPopoverTheme *defaultTheme_ = nil;
     
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     
-    CGSize contentViewSize = CGSizeMake(300, 200);
+    CGSize contentViewSize;
+    
+    if(self.popupMode==LOGINPOP) {
+        contentViewSize = CGSizeMake(300, 200);
+    }
+    else if(self.popupMode==JOINPOP) {
+        contentViewSize = CGSizeMake(300, 300);
+    }
 
     CGSize minContainerSize = WY_POPOVER_MIN_SIZE;
     

@@ -1,14 +1,18 @@
 //
-//  LoginPopupViewController.m
+//  JoinPopupViewController.m
 //  happinuss_ios
 //
 //  Created by Imac on 2015. 1. 20..
 //  Copyright (c) 2015년 kayadami. All rights reserved.
 //
 
-#import "LoginPopupViewController.h"
+#import "JoinPopupViewController.h"
 
-@implementation LoginPopupViewController
+@interface JoinPopupViewController ()
+
+@end
+
+@implementation JoinPopupViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -19,11 +23,9 @@
     return self;
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,13 +43,4 @@
 }
 */
 
-- (IBAction)loginBtnTouch:(id)sender {
-    
-    [self.delegate loginRequest:self];
-    
-}
-
-- (IBAction)closeBtnTouch:(id)sender {
-    [self.delegate closePopupLogin:self];
-}
 @end

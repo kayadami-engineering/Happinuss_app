@@ -37,4 +37,10 @@
                                            animated:(BOOL)animated
                                             options:(WYPopoverAnimationOptions)options;
 
+- (WYPopoverController*)popoverControllerWithSender:(id)sender
+                           permittedArrowDirections:(WYPopoverArrowDirection)arrowDirections
+                                           animated:(BOOL)animated
+                                            options:(WYPopoverAnimationOptions)options
+                                               mode:(int)mode;
+
 @end

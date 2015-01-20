@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WYPopoverController.h"
 #import "LoginViewController.h"
 
 @protocol LoginViewControllerDelegate;
@@ -18,14 +17,13 @@
 - (IBAction)closeBtnTouch:(id)sender;
 
 @property (weak, nonatomic) id<LoginViewControllerDelegate> delegate;
-@property (strong, nonatomic) WYPopoverController *wyPopoverController;
 @end
 
 @protocol LoginViewControllerDelegate <NSObject>
 
 @optional
 
-- (void)closePopup:(LoginPopupViewController *)controller;
+- (void)closePopupLogin:(LoginPopupViewController *)controller;
 - (void)loginRequest:(LoginPopupViewController *)controller;
 
 @end
