@@ -1,30 +1,22 @@
 //
-//  LoginPopupViewController.m
+//  MainTabViewController.m
 //  happinuss_ios
 //
 //  Created by Imac on 2015. 1. 20..
 //  Copyright (c) 2015년 kayadami. All rights reserved.
 //
 
-#import "LoginPopupViewController.h"
+#import "MainTabViewController.h"
 
-@implementation LoginPopupViewController
-@synthesize wyPopoverController;
+@interface MainTabViewController ()
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+@end
 
+@implementation MainTabViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Do any additional setup after loading the view from its nib.
+    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,13 +34,4 @@
 }
 */
 
-- (IBAction)loginBtnTouch:(id)sender {
-    
-    [self.delegate loginRequest:self];
-    
-}
-
-- (IBAction)closeBtnTouch:(id)sender {
-    [self.delegate closePopup:self];
-}
 @end

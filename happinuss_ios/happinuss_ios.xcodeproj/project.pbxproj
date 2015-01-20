@@ -21,6 +21,20 @@
 		886612A21A6D1F39008D8473 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 8866129F1A6D1F39008D8473 /* SVProgressHUD.m */; };
 		889800AF1A6E384A004C3158 /* WYPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889800AC1A6E384A004C3158 /* WYPopoverController.m */; };
 		889800B01A6E384A004C3158 /* WYStoryboardPopoverSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 889800AE1A6E384A004C3158 /* WYStoryboardPopoverSegue.m */; };
+		889800B21A6E64AE004C3158 /* cancel_ic.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800B11A6E64AE004C3158 /* cancel_ic.png */; };
+		889800B41A6E6531004C3158 /* signup_1_ic.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800B31A6E6531004C3158 /* signup_1_ic.png */; };
+		889800B61A6E674D004C3158 /* pinkLine.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800B51A6E674D004C3158 /* pinkLine.png */; };
+		889800BF1A6E7875004C3158 /* myreport.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800B81A6E7875004C3158 /* myreport.png */; };
+		889800C01A6E7875004C3158 /* mystory.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800B91A6E7875004C3158 /* mystory.png */; };
+		889800C11A6E7875004C3158 /* others.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800BA1A6E7875004C3158 /* others.png */; };
+		889800C21A6E7875004C3158 /* p_tapbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800BB1A6E7875004C3158 /* p_tapbar.png */; };
+		889800C31A6E7875004C3158 /* write.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800BC1A6E7875004C3158 /* write.png */; };
+		889800C41A6E7875004C3158 /* writebox.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800BD1A6E7875004C3158 /* writebox.png */; };
+		889800C61A6E7B78004C3158 /* bg_blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 889800C51A6E7B78004C3158 /* bg_blur.png */; };
+		889800C91A6E7C10004C3158 /* WriteStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889800C81A6E7C10004C3158 /* WriteStoryViewController.m */; };
+		889800CC1A6E7C53004C3158 /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889800CB1A6E7C53004C3158 /* ReportViewController.m */; };
+		889800CF1A6E7CF6004C3158 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 889800CE1A6E7CF6004C3158 /* MainTabViewController.m */; };
+		889800D31A6E8544004C3158 /* home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 889800D21A6E8544004C3158 /* home.jpg */; };
 		88A52A111A5FD8C200D2CE70 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A101A5FD8C200D2CE70 /* HomeViewController.m */; };
 		88A52A141A5FD8DC00D2CE70 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A131A5FD8DC00D2CE70 /* LoginViewController.m */; };
 		88A52A181A5FDA2900D2CE70 /* MyStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */; };
@@ -69,6 +83,23 @@
 		889800AC1A6E384A004C3158 /* WYPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYPopoverController.m; sourceTree = "<group>"; };
 		889800AD1A6E384A004C3158 /* WYStoryboardPopoverSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYStoryboardPopoverSegue.h; sourceTree = "<group>"; };
 		889800AE1A6E384A004C3158 /* WYStoryboardPopoverSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYStoryboardPopoverSegue.m; sourceTree = "<group>"; };
+		889800B11A6E64AE004C3158 /* cancel_ic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel_ic.png; sourceTree = "<group>"; };
+		889800B31A6E6531004C3158 /* signup_1_ic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signup_1_ic.png; sourceTree = "<group>"; };
+		889800B51A6E674D004C3158 /* pinkLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkLine.png; sourceTree = "<group>"; };
+		889800B81A6E7875004C3158 /* myreport.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myreport.png; sourceTree = "<group>"; };
+		889800B91A6E7875004C3158 /* mystory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mystory.png; sourceTree = "<group>"; };
+		889800BA1A6E7875004C3158 /* others.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = others.png; sourceTree = "<group>"; };
+		889800BB1A6E7875004C3158 /* p_tapbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p_tapbar.png; sourceTree = "<group>"; };
+		889800BC1A6E7875004C3158 /* write.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = write.png; sourceTree = "<group>"; };
+		889800BD1A6E7875004C3158 /* writebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = writebox.png; sourceTree = "<group>"; };
+		889800C51A6E7B78004C3158 /* bg_blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg_blur.png; sourceTree = "<group>"; };
+		889800C71A6E7C10004C3158 /* WriteStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteStoryViewController.h; sourceTree = "<group>"; };
+		889800C81A6E7C10004C3158 /* WriteStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteStoryViewController.m; sourceTree = "<group>"; };
+		889800CA1A6E7C53004C3158 /* ReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReportViewController.h; sourceTree = "<group>"; };
+		889800CB1A6E7C53004C3158 /* ReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReportViewController.m; sourceTree = "<group>"; };
+		889800CD1A6E7CF6004C3158 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
+		889800CE1A6E7CF6004C3158 /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		889800D21A6E8544004C3158 /* home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home.jpg; sourceTree = "<group>"; };
 		88A52A0F1A5FD8C200D2CE70 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		88A52A101A5FD8C200D2CE70 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		88A52A121A5FD8DC00D2CE70 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
@@ -174,8 +205,19 @@
 		8866128C1A6D0F70008D8473 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				889800D21A6E8544004C3158 /* home.jpg */,
+				889800C51A6E7B78004C3158 /* bg_blur.png */,
+				889800B81A6E7875004C3158 /* myreport.png */,
+				889800B91A6E7875004C3158 /* mystory.png */,
+				889800BA1A6E7875004C3158 /* others.png */,
+				889800BB1A6E7875004C3158 /* p_tapbar.png */,
+				889800BC1A6E7875004C3158 /* write.png */,
+				889800BD1A6E7875004C3158 /* writebox.png */,
+				889800B51A6E674D004C3158 /* pinkLine.png */,
+				889800B31A6E6531004C3158 /* signup_1_ic.png */,
 				88E9CA181A6D2D45005FE8EC /* eg_launch_up.jpg */,
 				8866128D1A6D0F7D008D8473 /* eg_launch.png */,
+				889800B11A6E64AE004C3158 /* cancel_ic.png */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -211,14 +253,20 @@
 				881466701A5C2F7600D677A9 /* RootViewController.m */,
 				88A52A121A5FD8DC00D2CE70 /* LoginViewController.h */,
 				88A52A131A5FD8DC00D2CE70 /* LoginViewController.m */,
-				88A52A0F1A5FD8C200D2CE70 /* HomeViewController.h */,
-				88A52A101A5FD8C200D2CE70 /* HomeViewController.m */,
-				88A52A161A5FDA2900D2CE70 /* MyStoryViewController.h */,
-				88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */,
-				88A52A191A5FE47700D2CE70 /* OtherStoryViewController.h */,
-				88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */,
 				88E9CA231A6D745F005FE8EC /* LoginPopupViewController.h */,
 				88E9CA241A6D745F005FE8EC /* LoginPopupViewController.m */,
+				889800CD1A6E7CF6004C3158 /* MainTabViewController.h */,
+				889800CE1A6E7CF6004C3158 /* MainTabViewController.m */,
+				88A52A0F1A5FD8C200D2CE70 /* HomeViewController.h */,
+				88A52A101A5FD8C200D2CE70 /* HomeViewController.m */,
+				88A52A191A5FE47700D2CE70 /* OtherStoryViewController.h */,
+				88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */,
+				889800C71A6E7C10004C3158 /* WriteStoryViewController.h */,
+				889800C81A6E7C10004C3158 /* WriteStoryViewController.m */,
+				88A52A161A5FDA2900D2CE70 /* MyStoryViewController.h */,
+				88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */,
+				889800CA1A6E7C53004C3158 /* ReportViewController.h */,
+				889800CB1A6E7C53004C3158 /* ReportViewController.m */,
 			);
 			name = MainController;
 			sourceTree = "<group>";
@@ -323,12 +371,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889800C11A6E7875004C3158 /* others.png in Resources */,
 				88A52A1E1A60151400D2CE70 /* Launch.png in Resources */,
+				889800BF1A6E7875004C3158 /* myreport.png in Resources */,
+				889800C01A6E7875004C3158 /* mystory.png in Resources */,
+				889800D31A6E8544004C3158 /* home.jpg in Resources */,
+				889800C21A6E7875004C3158 /* p_tapbar.png in Resources */,
+				889800B21A6E64AE004C3158 /* cancel_ic.png in Resources */,
+				889800C61A6E7B78004C3158 /* bg_blur.png in Resources */,
+				889800C31A6E7875004C3158 /* write.png in Resources */,
 				886612A11A6D1F39008D8473 /* SVProgressHUD.bundle in Resources */,
+				889800C41A6E7875004C3158 /* writebox.png in Resources */,
+				889800B61A6E674D004C3158 /* pinkLine.png in Resources */,
 				881466741A5C2F7600D677A9 /* Main.storyboard in Resources */,
 				88E9CA191A6D2D45005FE8EC /* eg_launch_up.jpg in Resources */,
 				881466791A5C2F7600D677A9 /* LaunchScreen.xib in Resources */,
 				8866128E1A6D0F7D008D8473 /* eg_launch.png in Resources */,
+				889800B41A6E6531004C3158 /* signup_1_ic.png in Resources */,
 				881466761A5C2F7600D677A9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,7 +407,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				881466711A5C2F7600D677A9 /* RootViewController.m in Sources */,
+				889800CF1A6E7CF6004C3158 /* MainTabViewController.m in Sources */,
 				88A52A1B1A5FE47700D2CE70 /* OtherStoryViewController.m in Sources */,
+				889800C91A6E7C10004C3158 /* WriteStoryViewController.m in Sources */,
 				889800B01A6E384A004C3158 /* WYStoryboardPopoverSegue.m in Sources */,
 				88E9CA261A6D745F005FE8EC /* LoginPopupViewController.m in Sources */,
 				8814666E1A5C2F7600D677A9 /* AppDelegate.m in Sources */,
@@ -356,6 +417,7 @@
 				88A52A181A5FDA2900D2CE70 /* MyStoryViewController.m in Sources */,
 				889800AF1A6E384A004C3158 /* WYPopoverController.m in Sources */,
 				886612A21A6D1F39008D8473 /* SVProgressHUD.m in Sources */,
+				889800CC1A6E7C53004C3158 /* ReportViewController.m in Sources */,
 				88A52A111A5FD8C200D2CE70 /* HomeViewController.m in Sources */,
 				8814666B1A5C2F7600D677A9 /* main.m in Sources */,
 				88A52A141A5FD8DC00D2CE70 /* LoginViewController.m in Sources */,
