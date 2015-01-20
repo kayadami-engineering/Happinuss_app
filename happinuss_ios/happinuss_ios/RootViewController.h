@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RootViewController : UIViewController
+@interface RootViewController : UIViewController {
+
+    
+}
+-(void) myTask;
+-(void) initialSetup;
 
 
 @end

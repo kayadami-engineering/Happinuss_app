@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController {
+}
 
+- (IBAction)showPopupLogin:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @end

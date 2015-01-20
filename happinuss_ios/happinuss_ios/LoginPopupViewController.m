@@ -1,21 +1,32 @@
 //
-//  LoginViewController.m
+//  LoginPopupViewController.m
 //  happinuss_ios
 //
-//  Created by Imac on 2015. 1. 9..
+//  Created by Imac on 2015. 1. 20..
 //  Copyright (c) 2015년 kayadami. All rights reserved.
 //
 
-#import "LoginViewController.h"
+#import "LoginPopupViewController.h"
 
+@interface LoginPopupViewController ()
 
-@implementation LoginViewController
-@synthesize loginBtn;
+@end
+
+@implementation LoginPopupViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,7 +44,4 @@
 }
 */
 
-- (IBAction)showPopupLogin:(id)sender {
-    
-}
 @end
