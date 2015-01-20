@@ -15,7 +15,12 @@
 @implementation MainTabViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
+
+    
+    //[[UITabBar appearance] setTintColor:[UIColor colorWithRed:81/255.0 green:89/255.0 blue:100/255.0 alpha:1.0]];
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor colorWithRed:147/255.0 green:208/255.0 blue:231/255.0 alpha:1.0]];
     // Do any additional setup after loading the view.
 }
 

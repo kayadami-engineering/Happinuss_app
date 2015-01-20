@@ -262,8 +262,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg_blur.png" translatesAutoresizingMaskIntoConstraints="NO" id="LkZ-2S-Kcu">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LkZ-2S-Kcu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -361,7 +361,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg_blur.png" width="721" height="1280"/>
+        <image name="background.jpg" width="640" height="1136"/>
         <image name="cancel_ic.png" width="41" height="41"/>
         <image name="eg_launch.png" width="720" height="1280"/>
         <image name="eg_launch_up.jpg" width="720" height="1280"/>
