@@ -9,9 +9,8 @@
 #import "RootViewController.h"
 #import "SVProgressHUD.h"
 
-
-
 @implementation RootViewController
+@synthesize networkController;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,6 +29,11 @@
     [SVProgressHUD setForegroundColor:[UIColor colorWithRed:120.0/255.0 green:194.0/255.0 blue:222.0/255.0 alpha:0.90]];
     [SVProgressHUD show];
     [self performSelector:@selector(myTask)withObject:nil afterDelay:2.0];
+    
+    networkController = [[NetworkController alloc]init];
+    [networkController initNetwork];
+    [networkController postToServer:[NSString stringWithFormat:@"command=%@", @"BookList"]];
+    
     
 }
 - (void)myTask {

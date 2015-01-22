@@ -42,6 +42,7 @@
 		88A52A181A5FDA2900D2CE70 /* MyStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */; };
 		88A52A1B1A5FE47700D2CE70 /* OtherStoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */; };
 		88A52A1E1A60151400D2CE70 /* Launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A52A1D1A60151400D2CE70 /* Launch.png */; };
+		88D480151A7110F200F663DA /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D480141A7110F200F663DA /* NetworkController.m */; };
 		88E9CA131A6D20C2005FE8EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E9CA121A6D20C2005FE8EC /* UIKit.framework */; };
 		88E9CA151A6D20CA005FE8EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E9CA141A6D20CA005FE8EC /* Foundation.framework */; };
 		88E9CA171A6D20D2005FE8EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E9CA161A6D20D2005FE8EC /* CoreGraphics.framework */; };
@@ -114,6 +115,8 @@
 		88A52A191A5FE47700D2CE70 /* OtherStoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherStoryViewController.h; sourceTree = "<group>"; };
 		88A52A1A1A5FE47700D2CE70 /* OtherStoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherStoryViewController.m; sourceTree = "<group>"; };
 		88A52A1D1A60151400D2CE70 /* Launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Launch.png; sourceTree = "<group>"; };
+		88D480131A7110F200F663DA /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		88D480141A7110F200F663DA /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 		88E9CA121A6D20C2005FE8EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		88E9CA141A6D20CA005FE8EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88E9CA161A6D20D2005FE8EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -275,6 +278,8 @@
 				88A52A171A5FDA2900D2CE70 /* MyStoryViewController.m */,
 				889800CA1A6E7C53004C3158 /* ReportViewController.h */,
 				889800CB1A6E7C53004C3158 /* ReportViewController.m */,
+				88D480131A7110F200F663DA /* NetworkController.h */,
+				88D480141A7110F200F663DA /* NetworkController.m */,
 			);
 			name = MainController;
 			sourceTree = "<group>";
@@ -415,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88D480151A7110F200F663DA /* NetworkController.m in Sources */,
 				881466711A5C2F7600D677A9 /* RootViewController.m in Sources */,
 				889800CF1A6E7CF6004C3158 /* MainTabViewController.m in Sources */,
 				88A52A1B1A5FE47700D2CE70 /* OtherStoryViewController.m in Sources */,
