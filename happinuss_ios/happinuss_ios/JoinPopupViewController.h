@@ -9,15 +9,21 @@
 #import <UIKit/UIKit.h>
 #import "LoginViewController.h"
 
+@protocol JoinViewControllerDelegate;
+
 @interface JoinPopupViewController : UIViewController
 
-@property (weak, nonatomic) id<LoginViewControllerDelegate> delegate;
+- (IBAction)joinBtnPressed:(id)sender;
+- (IBAction)closeBtnPressed:(id)sender;
+@property (weak, nonatomic) id<JoinViewControllerDelegate> delegate;
+
 @end
 
-@protocol LoginViewControllerDelegate <NSObject>
+@protocol JoinViewControllerDelegate <NSObject>
 
 @optional
 
 - (void)closePopupJoin:(JoinPopupViewController *)controller;
+- (void)joinRequest:(JoinPopupViewController *)controller;
 
 @end

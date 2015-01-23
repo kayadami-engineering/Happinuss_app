@@ -8,9 +8,6 @@
 
 #import "JoinPopupViewController.h"
 
-@interface JoinPopupViewController ()
-
-@end
 
 @implementation JoinPopupViewController
 
@@ -42,5 +39,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)joinBtnPressed:(id)sender {
+    [self.delegate joinRequest:self];
+    
+}
+
+- (IBAction)closeBtnPressed:(id)sender {
+    [self.delegate closePopupJoin:self];
+}
 
 @end

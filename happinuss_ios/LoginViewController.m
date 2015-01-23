@@ -12,7 +12,7 @@
 #import "WYStoryboardPopoverSegue.h"
 #import "SVProgressHUD.h"
 
-@interface LoginViewController () <LoginViewControllerDelegate, WYPopoverControllerDelegate> {
+@interface LoginViewController () <LoginViewControllerDelegate, JoinViewControllerDelegate, WYPopoverControllerDelegate> {
    
 }
 @end
@@ -73,27 +73,28 @@
     }
 }
 
-- (void)myTask {
+- (void)loginOk {
     
     //do something..
     [SVProgressHUD dismiss];
     [self performSegueWithIdentifier:@"TabViewSegue" sender:self];
 }
+
+- (void)joinOk {
+    
+    //do something..
+    [SVProgressHUD dismiss];
+}
+
 - (void)closePopup {
     [popoverController dismissPopoverAnimated:YES];
     popoverController.delegate = nil;
     popoverController = nil;
 }
 
-#pragma mark - Delegate
+#pragma mark - Login popup View Delegate
 
 - (void)closePopupLogin:(LoginPopupViewController *)controller {
-    
-    controller.delegate = nil;
-    
-    [self closePopup];
-}
-- (void)closePopupJoin:(JoinPopupViewController *)controller {
     
     controller.delegate = nil;
     
@@ -106,9 +107,25 @@
     [SVProgressHUD setViewForExtension:self.view];
     [SVProgressHUD setForegroundColor:[UIColor colorWithRed:120.0/255.0 green:194.0/255.0 blue:222.0/255.0 alpha:0.90]];
     [SVProgressHUD show];
-    [self performSelector:@selector(myTask)withObject:nil afterDelay:1.0];
+    [self performSelector:@selector(loginOk)withObject:nil afterDelay:1.0];
     
 }
 
+#pragma mark - Join popup View Delegate
 
+- (void)closePopupJoin:(JoinPopupViewController *)controller {
+    
+    controller.delegate = nil;
+    
+    [self closePopup];
+}
+
+- (void)joinRequest:(JoinPopupViewController *)controller {
+    [self closePopupJoin:controller];
+    [SVProgressHUD setViewForExtension:self.view];
+    [SVProgressHUD setForegroundColor:[UIColor colorWithRed:120.0/255.0 green:194.0/255.0 blue:222.0/255.0 alpha:0.90]];
+    [SVProgressHUD show];
+    [self performSelector:@selector(joinOk)withObject:nil afterDelay:1.0];
+    
+}
 @end

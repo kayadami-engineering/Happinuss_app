@@ -162,53 +162,52 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이름" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8U3-ei-X9n">
-                                <rect key="frame" x="33" y="8" width="235" height="30"/>
+                                <rect key="frame" x="33" y="40" width="235" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="xaH-Ed-4co">
-                                <rect key="frame" x="21" y="37" width="259" height="1"/>
+                                <rect key="frame" x="21" y="69" width="259" height="1"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="51P-q9-Y8V">
-                                <rect key="frame" x="21" y="75" width="259" height="1"/>
+                                <rect key="frame" x="21" y="107" width="259" height="1"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="학번 예)1169001 (7자리), IES00000 (8자리)" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pjp-B1-SN5">
-                                <rect key="frame" x="33" y="46" width="235" height="30"/>
+                                <rect key="frame" x="33" y="78" width="235" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="jWc-G4-i6a">
-                                <rect key="frame" x="21" y="113" width="259" height="1"/>
+                                <rect key="frame" x="21" y="145" width="259" height="1"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="이메일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CyE-Yi-LIt">
-                                <rect key="frame" x="33" y="84" width="235" height="30"/>
+                                <rect key="frame" x="33" y="116" width="235" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="RCc-BS-T6A">
-                                <rect key="frame" x="21" y="151" width="259" height="1"/>
+                                <rect key="frame" x="21" y="183" width="259" height="1"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bAh-jg-K91">
-                                <rect key="frame" x="33" y="122" width="235" height="30"/>
+                                <rect key="frame" x="33" y="154" width="235" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-Ck-e3p">
-                                <rect key="frame" x="21" y="189" width="259" height="1"/>
+                                <rect key="frame" x="21" y="221" width="259" height="1"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 확인" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5H8-3v-WdQ">
-                                <rect key="frame" x="33" y="160" width="235" height="30"/>
+                                <rect key="frame" x="33" y="192" width="235" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pinkLine.png" translatesAutoresizingMaskIntoConstraints="NO" id="o4h-n1-66B">
-                                <rect key="frame" x="21" y="227" width="259" height="1"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="생년월일" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aVc-fU-HGb">
-                                <rect key="frame" x="33" y="198" width="235" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hic-bM-6Xw">
+                                <rect key="frame" x="263" y="18" width="28" height="27"/>
+                                <state key="normal" title="Button" image="cancel_ic.png"/>
+                                <connections>
+                                    <action selector="closeBtnPressed:" destination="52G-F6-RFW" eventType="touchUpInside" id="UO1-Mc-vJt"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grl-Ee-kEV">
                                 <rect key="frame" x="106" y="236" width="88" height="33"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
@@ -217,7 +216,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginBtnTouch:" destination="52G-F6-RFW" eventType="touchUpInside" id="A7F-BM-r3j"/>
+                                    <action selector="joinBtnPressed:" destination="52G-F6-RFW" eventType="touchUpInside" id="LF4-SM-3gq"/>
                                 </connections>
                             </button>
                         </subviews>
